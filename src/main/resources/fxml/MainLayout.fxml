@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sistemavendas.controller.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="abrirHome" mnemonicParsing="false" onAction="#abrirHome" text="Home">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="abrirCadastro" mnemonicParsing="false" text="Cadastro">
+            <items>
+              <MenuItem fx:id="abrirCliente" mnemonicParsing="false" onAction="#abrirCliente" text="Cliente1" />
+                  <MenuItem fx:id="abrirProduto" mnemonicParsing="false" onAction="#abrirProduto" text="Produto" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Nova Venda">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu fx:id="abrirRelatorio" mnemonicParsing="false" onAction="#abrirRelatorio" text="Relatórios">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+          <Menu fx:id="abrirajuda" mnemonicParsing="false" onAction="#abrirajuda" text="Ajuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Sobre" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Label text="Nova venda" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
