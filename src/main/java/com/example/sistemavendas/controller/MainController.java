@@ -28,7 +28,7 @@ public class MainController {
 
     @FXML
     public void abrirProduto(){
-        carregarTela("Produtos.fxml");
+        carregarTela("CadastroProduto.fxml");
     }
 
     private void carregarTela(String fxml) {
