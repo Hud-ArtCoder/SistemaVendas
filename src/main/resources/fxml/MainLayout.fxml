@@ -10,11 +10,7 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu fx:id="abrirHome" mnemonicParsing="false" onAction="#abrirHome" text="Home">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
+          <Menu fx:id="abrirHome" mnemonicParsing="false" onAction="#abrirHome" text="Home" />
           <Menu fx:id="abrirCadastro" mnemonicParsing="false" text="Cadastro">
             <items>
               <MenuItem fx:id="abrirCliente" mnemonicParsing="false" onAction="#abrirCliente" text="Cliente1" />
@@ -40,6 +36,6 @@
       </MenuBar>
    </top>
    <center>
-      <Label text="Nova venda" BorderPane.alignment="CENTER" />
+      <Label text="Bem Vindos (a)" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
