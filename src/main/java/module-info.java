@@ -4,6 +4,7 @@ module com.example.sistemavendas {
     requires java.sql;
 
     requires mysql.connector.j;
+    requires javafx.base;
 
     opens com.example.sistemavendas to javafx.fxml;
     opens com.example.sistemavendas.controller to javafx.fxml;
