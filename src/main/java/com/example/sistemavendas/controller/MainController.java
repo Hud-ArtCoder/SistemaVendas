@@ -24,6 +24,9 @@ public class MainController {
     }
 
     @FXML
+    public void abrirnovavenda(){ carregarTela("CadastroNovaVenda");}
+
+    @FXML
     public void abrirRelatorio(){ carregarTela("Relatório.fxml");}
 
     @FXML

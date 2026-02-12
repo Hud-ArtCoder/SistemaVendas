@@ -1,5 +1,6 @@
 package com.example.sistemavendas.dao;
 
+import com.example.sistemavendas.model.Cliente;
 import com.example.sistemavendas.model.Produto;
 import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 
@@ -26,6 +27,27 @@ public class ProdutoDAO {
             stmt.execute();
 
         }
+    }
+    public Produto buscarProduto(String nome){
+        String sql = "SELECT * FROM produto WHERE nome = ?";
+
+        try (Connection connection = ConnectionFactory.getConnection();
+             PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, nome);
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                return new Produto(
+                        rs.getInt("id"),
+                        rs.getString("nome"),
+                        rs.getDouble("preco")
+
+                );
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public List<Produto> listarTodos() throws SQLException {

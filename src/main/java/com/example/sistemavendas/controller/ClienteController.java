@@ -2,7 +2,6 @@ package com.example.sistemavendas.controller;
 
 import com.example.sistemavendas.dao.ClienteDAO;
 import com.example.sistemavendas.model.Cliente;
-import com.example.sistemavendas.model.Produto;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
